@@ -1,2 +1,5 @@
+#soal 1
+14 14 14 2 5 ~/satu.sh
+
 #soal 5
 2-30/6 * * * * /bin/bas /home/ramrom/Documents/sisop/modul1/soal5.sh
