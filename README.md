@@ -1,5 +1,32 @@
 # SoalShift_modul1_D10
 
+# soal 1
+Pada soal ini kita diberikan file nature.zip yang harus di dekripsi dengan syarat bahwa file tersebut akan dibuka pada pukul 14:14 tanggal 14 Februari, atau hari tersebut adalah hari Jumat pada bulan Februari.
+
+Maka setelah mengunduh file nature.zip, untuk membukanya kita gunakan perintah unzip, lalu karena folder tersebut berisi kumpulan foto yang di encrypt, kita bisa menggunakan command base64 -d untuk melakukan decrypt, sebab foto di enkripsi dengan base64.
+Proses tersebut menghasilkan hexadecimal, jadi untuk mengembalikannya ke format awal, kita gunakan command xxd -r.
+
+Pada crontab ditambahkan perintah "14 14 14 2 5" sebagai schedulenya.
+
+# soal 2
+Soal ini meminta kita untuk memberi beberapa laporan dari file WA_Sales_Products_2012-14.csv.
+
+a. Tentukan negara dengan penjualan(quantity) terbanyak pada tahun 2012.
+b  Tentukan tiga product line yang memberikan penjualan(quantity) terbanyak pada soal poin a.
+c. Tentukan tiga product yang memberikan penjualan(quantity) terbanyak berdasarkan tiga product line yang didapatkan pada soal poin b.
+
+Laporan-laporan tersebut dapat didapatkan menggunakan awk.
+
+#soal 3
+Soal ini meminta kita untuk menghasilkan password secara acak sebanyak 12 karakter yang terdapat huruf besar, huruf kecil, dan angka. Password acak tersebut disimpan pada file berekstensi .txt dengan ketentuan pemberian nama sebagai berikut:
+1. Jika tidak ditemukan file password1.txt maka password acak tersebut disimpan pada file bernama password1.txt
+2. Jika file password1.txt sudah ada maka password acak baru akan disimpan pada file bernama password2.txt dan begitu seterusnya.
+3. Urutan nama file tidak boleh ada yang terlewatkan meski filenya dihapus.
+Password yang dihasilkan tidak boleh sama.
+
+Maka, pertama kita minta input dari user untuk menentukan berapa banyak password yang ingin dibuat, lalu melakukan  perulangan sebanyak jumlah tersebut.
+Kita tambahkan if untuk mengecek apakah file password.txt sebelumnya sudah ada, jika belum maka kita masukkan syntax yang akan membuat sebuah file password1.txt berisi random string sesuai persyaratan, lalu dimasukkan ke folder yang telah ditetapkan.
+
 # soal 4
 
 pada soal ini meminta kita untuk mem-backup file syslog setiap jam dangan format nama file yang telah ditentukan. isi dari file tersebut harus terenkripsi dengan konversi huruf yang disesuakan dengan jam pada saat melakukan backup file. kita juga harus membuat bash script untuk dekripsi.
