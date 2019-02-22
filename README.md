@@ -12,6 +12,7 @@ i. untuk mengambil data kita harus kita akan menggunaka script :
 ii. untuk mendapatkan kurang dari 13 record yang didalamnya tidak terdapat kata sudo dan terdapat kata cron maka kita menggunakan script :
 
    awk '(!(/[Ss][Uu][Dd][Oo]/) && (/[Cc][Rr][Oo][Nn]/) && NF<13)'
+   
    pada kasus ini kita menggunakan awk, dan untuk membatasi field kita menggunakan NF
  
 iii. untuk menyimpan file ke direktori yang telah ditentukan maka kita akan menggunaka script :
