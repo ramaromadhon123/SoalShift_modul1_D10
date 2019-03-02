@@ -1,5 +1,6 @@
 #soal 1
-14 14 14 2 5 ~/satu.sh
+14 14 14 2 * bash soal1.sh
+14 14 * 2 5 bash soal1.sh
 
 #soal 4
 @hourly bash /home/ramrom/Documents/sisop/modul1/soal5.sh
